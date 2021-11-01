@@ -1,0 +1,169 @@
+.header__logo {
+    height: 16px;
+}
+#header__nav {
+    display: none;
+}
+.header__email {
+    display: none;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__logo {
+    height: 80px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero__article {
+    color: white;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#hero__article0 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/article0.jpg");
+    width: 100%;
+    height: 50vw;
+}
+#hero__article1 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/article1.jpg");
+}
+#hero__article2 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/home-header_advert-tnw2021-03.jpg");
+    justify-content: center;
+}
+#hero__article3 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/article3.jpg");
+}
+#hero__article4 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/article4.jpg");
+}
+
+.popular-articles ol {
+    display: flex;
+    flex-direction: column;
+}
+.popular-articles ol li::marker {
+    color: magenta;
+    font-size: xx-large;
+}
+
+
+.latest-stories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.stories__article {
+    width: 50%;
+}
+
+.explore-our-channels {
+    display: flex;
+    flex-direction: row;
+}
+.channel__article {
+    width: 32%;
+    height: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.channel__article img {
+    width: 15vw;
+}
+
+#plugg {
+    background-image: url("/assets/images/plugged-background.webp");
+}
+#neural {
+    background-image: url("/assets/images/neural-background.jpg");
+}
+#shift {
+    background-image: url("/assets/images/shift-background.jpg");
+}
+#growth-quarters {
+    background-image: url("/assets/images/growth-quarters-background.jpg");
+}
+#hardfork {
+    background-image: url("/assets/images/hardfork-background.webp");
+}
+
+#newsletter-signup {
+    height: 43vw;
+    background-image: url("/assets/images/spacesbg.webp");
+    background-position: center center;
+    /* background-repeat:no-repeat; */
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-with-us {
+    display: flex;
+    flex-direction: row;
+}
+#work-with-us div {
+    width: 50%;
+}
+#work-with-us img {
+    height: 15vw;
+}
+#work-with-us__areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#work-with-us__areas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#companies {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#companies img {
+    width: 22vw;
+}
+
+.footer--main {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#footer__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer__moreNav, #footer__aboutNav {
+    width: 50%;
+}
+.footer__logo {
+    width: 20vw;
+}
+.footer--copyright {
+    text-align: center;
+}
