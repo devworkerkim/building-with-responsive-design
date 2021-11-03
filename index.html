@@ -38,21 +38,21 @@
                 <h3>An exhaustive investigation into Mark Zuckerberg’s saucy bookshelves</h3>
             </article>
             <article class="hero__article" id="hero__article2">
-                <h3>Mark your calendar for June 16 & 17!
-                    Join us at TNW Conference 2022</h3>
-                <button>GET TICKETS</button>
-            </article>
-            <article class="hero__article" id="hero__article3">
                 <h4>CHEAP</h4>
                 <h3>This new $15 Raspberry Pi is like mana for at-home programming projects</h3>
             </article>
-            <article class="hero__article" id="hero__article4">
+            <article class="hero__article" id="hero__article3">
                 <h4>META</h4>
                 <h3>After the Facebook Papers, what’s next for, err, Meta?</h3>
             </article>
         </section>
+        <article id="tnw-conf">
+            <h3>Mark your calendar for June 16 & 17!
+                Join us at TNW Conference 2022</h3>
+            <button id="tnw-conf-btn">GET TICKETS</button>
+        </article>
+        <h3>POPULAR ARTICLES TODAY</h3>
         <section class="popular-articles">
-            <h3>POPULAR ARTICLES TODAY</h3>
             <ol>
                 <li>Apple's explanation for no FaceID on the MacBook Pro makes no sense</li>
                 <li>This new $15 Raspberry Pi is like mana for at-home programming projects</li>
@@ -104,7 +104,7 @@
                 <p>2 days ago</p>
             </article>
         </section>
-        <a href="#">ALL NEWS ></a>
+        <a href="#"><button id="all-news-btn">ALL NEWS ></button></a>
         <h3>Explor our channels</h3>
         <section class="explore-our-channels">
             <article class="channel__article" id="plugg">
@@ -133,22 +133,24 @@
             <h4>Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out our <a href="#">other newsletters.</a></h4>
             <form>
                 <input type="email" />
-                <button>Subscribe</button>
+                <button id="newsletter__subscribe-btn">Subscribe</button>
             </form>
             <div class="social-media-icons">
                 facebook instagram twitter youtube flipboard email linkedin
             </div>
         </section>
+        <h3>Watch what we made for you</h3>
         <section id="what-we-made-for-you">
-            <h3>Watch what we made for you</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
         <section id="work-with-us">
             <div>
                 <h4>REACH YOUR GOALS</h4>
                 <h3>Work with us</h3>
                 <p>TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
-                <button>GET IN TOUCH</button>
+                <button id="work-with-us__btn">GET IN TOUCH</button>
             </div>
             <div id="work-with-us__areas">
                 <div>
@@ -180,42 +182,44 @@
             <img src="/assets/images/mckinsey-company.svg">
         </div>
     </main>
-    <footer class="footer--main">
-        <div id="footer__info">
-            <div>
-                <a href="#"><img class="footer__logo" src="assets/images/tnw-logo.svg"/></a>
-                <h4>The heart of tech</h4>
+    <footer>
+        <div class="footer--main">
+            <div id="footer__info">
+                <div>
+                    <a href="#"><img class="footer__logo" src="assets/images/tnw-logo-white.svg"/></a>
+                    <h4>The heart of tech</h4>
+                </div>
+                <div class="social-media-icons">
+                    facebook instagram twitter youtube flipboard email linkedin
+                </div>
             </div>
-            <div class="social-media-icons">
-                facebook instagram twitter youtube flipboard email linkedin
-            </div>
+            <nav id="footer__moreNav">
+                <h3>MORE TNW</h3>
+                <ul>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Spaces</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">Deals</a></li>
+                </ul>
+            </nav>
+            <nav id="footer__aboutNav">
+                <h3>ABOUT TNW</h3>
+                <ul>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Statement</a></li>
+                    <li><a href="#">Privacy Statement</a></li>
+                    <li><a href="#">Editorial Policy</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="footer__moreNav">
-            <h3>MORE TNW</h3>
-            <ul>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Spaces</a></li>
-                <li><a href="#">Newsletters</a></li>
-                <li><a href="#">Deals</a></li>
-            </ul>
-        </nav>
-        <nav id="footer__aboutNav">
-            <h3>ABOUT TNW</h3>
-            <ul>
-                <li><a href="#">Partner with us</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Cookie Statement</a></li>
-                <li><a href="#">Privacy Statement</a></li>
-                <li><a href="#">Editorial Policy</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <hr>
-    <footer class="footer--copyright">
-        <small>TNW is a <a href="#">Financial Times</a> company.<br>Copyright © 2006—2021, The Next Web B.V. Made with &lt;3 in Amsterdam.</small>
+        <hr>
+        <div class="footer--copyright">
+            <small>TNW is a <a href="#">Financial Times</a> company.<br>Copyright © 2006—2021, The Next Web B.V. Made with &lt;3 in Amsterdam.</smallclass=>
+        </div>
     </footer>
 </body>
 </html>
