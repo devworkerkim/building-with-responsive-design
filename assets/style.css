@@ -20,6 +20,17 @@ header {
     display: none;
 }
 
+.section__heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin-top: 2em;
+}
+
+.social-media-icons img {
+    width: 24px;
+    margin: 0 .5em;
+}
+
 main > h3{
     text-align: center;
 }
@@ -63,6 +74,15 @@ main > h3{
 #hero__article3 {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("/assets/images/article4.jpg");
 }
+.hero__article h4 {
+    font-size: small;
+    margin: 0;
+}
+.hero__article h3 {
+    font-size: x-large;
+    margin: 0;
+    margin-bottom: .5em;
+}
 
 #tnw-conf {
     height: 25%;
@@ -74,7 +94,7 @@ main > h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .5em;
+    padding: 5%;
 }
 #tnw-conf-btn {
     color: white;
@@ -85,14 +105,24 @@ main > h3{
 }
 
 .popular-articles ol {
+    padding-left: 0;
     display: flex;
     flex-direction: column;
+    counter-reset: item;
 }
-.popular-articles ol li::marker {
+.popular-articles ol li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.popular-articles ol li::before {
+    content: counter(item) " ";
+    counter-increment: item;
     color: magenta;
     font-size: xx-large;
+    padding: .25em;
+    float: left;
 }
-
 
 .latest-stories {
     display: flex;
@@ -166,19 +196,33 @@ main > h3{
     justify-content: center;
     align-items: center;
     padding: .5em;
+    margin-top: 2em;
+}
+#newsletter-signup a {
+    color: teal;
+    text-decoration: none;
+}
+#newsletter-signup h3, #newsletter-signup h4 {
+    margin: .5em;
+}
+#newsletter-signup h3 {
+    font-size: x-large;
+    font-weight: bold;
 }
 input {
+    width: 60vw;
     padding: 1em;
     border: none;
-    margin: 0;
+    margin: .5em 0;
 }
 #newsletter__subscribe-btn {
     color: white;
     background-color: magenta;
     padding: 1em;
     border: none;
-    margin: 0;
+    margin: .5em 0;
 }
+
 #video {
     position: relative;
     width: 100%;
@@ -195,8 +239,18 @@ input {
 
 #work-with-us {
     text-align: center;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
+}
+#work-with-us__subheading {
+    color: magenta;
+    font-size: small;
+    margin: 0;
+}
+#work-with-us__heading {
+    font-size: x-large;
+    margin: 0;
 }
 #work-with-us img {
     height: 15vw;
